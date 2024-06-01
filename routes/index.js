@@ -273,7 +273,7 @@ exports.import = function (req, res, next) {
     var locale = parts[2];
     var format = parts[3];
     var item = what;
-    if (!isBlank(what)) {
+
       if (!isBlank(when) && !isBlank(locale) && !isBlank(format)) {
         console.log('setting locale ' + parts[1]);
         moment.locale(locale);
